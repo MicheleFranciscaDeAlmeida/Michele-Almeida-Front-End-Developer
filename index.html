@@ -4,57 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michele Almeida | Portfólio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Michele Almeida | Front-End</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Fonte bonita -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <header>
-        <h1 id="typing-title"></h1>
+    <!-- HERO -->
+    <section id="hero">
+        <h1>Olá, eu sou Michele 👋</h1>
+        <h2>Desenvolvedora Front-End</h2>
+        <p>Crio interfaces modernas, responsivas e focadas na experiência do usuário.</p>
 
-        <button id="toggle-theme">🌙</button>
+        <div class="buttons">
+            <a href="#projetos" class="btn">Ver projetos</a>
+            <a href="#contato" class="btn-outline">Contato</a>
+        </div>
+    </section>
 
-        <nav>
-            <a href="#sobre">Sobre</a>
-            <a href="#tecnologias">Tecnologias</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#contato">Contato</a>
-        </nav>
-    </header>
-
+    <!-- SOBRE -->
     <section id="sobre">
         <h2>Sobre mim</h2>
-        <p>Sou estudante de Ciência da Computação focada em desenvolvimento front-end, criando interfaces modernas e
-            responsivas.</p>
+        <p>Sou estudante de Ciência da Computação apaixonada por desenvolvimento web e design moderno. Busco
+            oportunidades para crescer na área de tecnologia.</p>
     </section>
 
+    <!-- TECNOLOGIAS -->
     <section id="tecnologias">
         <h2>Tecnologias</h2>
-        <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>Git & GitHub</li>
-            <li>UI/UX</li>
-        </ul>
+
+        <div class="tech-container">
+            <div class="tech-card">HTML</div>
+            <div class="tech-card">CSS</div>
+            <div class="tech-card">JavaScript</div>
+            <div class="tech-card">Git</div>
+        </div>
     </section>
 
+    <!-- PROJETOS -->
     <section id="projetos">
         <h2>Projetos</h2>
 
         <div class="projetos-container">
 
             <div class="projeto-card">
-                <img src="assets/sistemagestao1.png">
+                <img src="assets/projeto1.png">
                 <h3>Sistema de Pacientes</h3>
-                <p>Cadastro com LocalStorage</p>
+                <p>CRUD com JavaScript e LocalStorage.</p>
+                <span class="tech">HTML • CSS • JS</span>
                 <a href="https://github.com/MicheleFranciscaDeAlmeida/Sistema-de-Gestao-de-Pacientes-Front-End"
                     target="_blank">Ver projeto</a>
             </div>
 
             <div class="projeto-card">
-                <img src="assets/portfolioweb.png">
+                <img src="assets/projeto2.png">
                 <h3>Portfólio Web</h3>
-                <p>Site moderno e responsivo</p>
+                <p>Site moderno e responsivo.</p>
+                <span class="tech">HTML • CSS • JS</span>
                 <a href="https://github.com/MicheleFranciscaDeAlmeida/Portf-lio-Web-Responsivo-Michele-Almeida"
                     target="_blank">Ver projeto</a>
             </div>
@@ -62,28 +72,23 @@
         </div>
     </section>
 
+    <!-- CONTATO -->
     <section id="contato">
         <h2>Contato</h2>
 
         <form id="form-contato">
-            <input type="text" id="nome" placeholder="Seu nome" required>
-            <input type="email" id="email" placeholder="Seu e-mail" required>
-            <textarea id="mensagem" placeholder="Sua mensagem"></textarea>
+            <input type="text" placeholder="Seu nome" required>
+            <input type="email" placeholder="Seu e-mail" required>
+            <textarea placeholder="Sua mensagem"></textarea>
             <button type="submit">Enviar</button>
         </form>
-
-        <p>
-            <a href="https://www.linkedin.com/in/michele-almeida-60b70b314" target="_blank">
-                LinkedIn
-            </a>
-        </p>
     </section>
 
     <footer>
         <p>© 2026 Michele Almeida</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

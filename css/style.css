@@ -7,64 +7,70 @@
 
 /* BODY */
 body {
-    font-family: Arial;
+    font-family: 'Poppins', sans-serif;
     background: #f5f5f5;
     color: #333;
-    scroll-behavior: smooth;
 }
 
-/* DARK MODE */
-body.dark {
-    background: #121212;
-    color: #eee;
-}
-
-/* HEADER */
-header {
-    background: linear-gradient(90deg, #6a0dad, #8a2be2);
-    color: white;
-    padding: 20px;
+/* HERO */
+#hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #6a0dad, #8a2be2);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
     text-align: center;
-    position: sticky;
-    top: 0;
 }
 
-/* BOTÃO DARK */
-#toggle-theme {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    padding: 8px;
-    border: none;
+#hero h1 {
+    font-size: 2.5rem;
+}
+
+#hero h2 {
+    font-weight: 300;
+}
+
+.buttons {
+    margin-top: 15px;
+}
+
+.btn {
+    background: #fff;
+    color: #6a0dad;
+    padding: 10px 20px;
     border-radius: 8px;
-    cursor: pointer;
+    margin: 5px;
 }
 
-/* MENU */
-nav a {
-    margin: 10px;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
+.btn-outline {
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: #fff;
 }
 
-nav a.active {
-    border-bottom: 2px solid #fff;
-}
-
-/* SECTIONS */
+/* SEÇÕES */
 section {
     padding: 60px 20px;
     max-width: 1000px;
     margin: auto;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: 0.6s;
 }
 
-section.visible {
-    opacity: 1;
-    transform: translateY(0);
+/* TECNOLOGIAS */
+.tech-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tech-card {
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
 }
 
 /* PROJETOS */
@@ -76,7 +82,7 @@ section.visible {
 }
 
 .projeto-card {
-    background: white;
+    background: #fff;
     padding: 20px;
     width: 280px;
     border-radius: 10px;
@@ -89,7 +95,13 @@ section.visible {
 }
 
 .projeto-card:hover {
-    transform: translateY(-10px) scale(1.02);
+    transform: translateY(-10px);
+}
+
+.tech {
+    display: block;
+    margin: 10px 0;
+    color: #6a0dad;
 }
 
 /* FORM */
@@ -111,9 +123,8 @@ textarea {
 button {
     padding: 10px;
     background: #6a0dad;
-    color: white;
+    color: #fff;
     border: none;
-    cursor: pointer;
 }
 
 /* FOOTER */
